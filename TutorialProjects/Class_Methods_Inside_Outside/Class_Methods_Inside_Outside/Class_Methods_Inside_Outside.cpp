@@ -3,21 +3,24 @@
 using namespace std;
 
 
-//class InsideClass
-//{
-//public:
-//    void insideClassMethod()
-//    {
-//        cout << "Example of Inside Class Method";
-//    }
-//};
-//int main()
-//{
-//    InsideClass newObject;
-//    newObject.insideClassMethod(); 
-//    return 0; 
-//    
-//}
+class InsideClass               //Class
+{
+public:                       //Access Specifier
+    void insideClassMethod() // Method/function defined inside the class
+    {
+        cout << "Example of Inside Class Method";
+    }
+};
+int main()
+{
+    InsideClass newObject;          // Create an object of MyClass
+    newObject.insideClassMethod(); // Call the method
+    return 0; 
+    
+}
+
+
+
 
 class OutsideClass
 {
@@ -25,9 +28,9 @@ public:
 	void outsideClassMethod(); 
 };
 
-void OutsideClass::outsideClassMethod()
+void OutsideClass::outsideClassMethod()     // Method/function definition outside the class
 {
-	cout << " Text from the outside class method"; 
+	cout << "Text from the outside class method"; 
 }
 
 int main()
