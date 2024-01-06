@@ -8,7 +8,6 @@ class Shape
 {
 public:
 	string color; 
-
 };
 
 class Rectangle : public Shape
@@ -21,7 +20,6 @@ public:
 	{
 		return width * height;
 	}
-
 };
 
 class Triangle : public Shape
@@ -34,8 +32,6 @@ public:
 	{
 		return 0.5 * base * height;
 	}
-
-
 };
 
 class Circle : public Shape
@@ -47,8 +43,6 @@ public:
 	{
 		return 3.14 * radius;
 	}
-
-
 };
 int main()
 {
